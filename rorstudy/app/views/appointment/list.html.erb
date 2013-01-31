@@ -1,0 +1,28 @@
+<h2>Appointment management</h2>
+<%if @appointments.count <=0 %>
+    <span>There is not appointment currently.<span>
+<% else %>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Appointment Date</th>
+        <th></th>
+        <th></th>
+      </tr>
+     
+    <% @appointments.each do |appointment| %>
+      <tr>
+        <td><%= appointment.name %></td>
+        <td><%= appointment.address %></td>
+        <td><%= appointment.email %></td>
+        <td><%= appointment.phone%></td>
+        <td><%= appointment.date %></td>
+        <td> <a href="/appointment/show">Detail</a></td>
+        <td> <a href="/appointment/delete">Delete</a></td>
+      </tr>
+    <% end %>
+    </table>
+<% end %>
