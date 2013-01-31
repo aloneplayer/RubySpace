@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rorstudy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>Appl</title>
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+<div id="wrapper">
+    <div id="header">
+        <div id="logo">
+            <h1>Appointment</h1>
+        </div>
+    </div>
+    <div id="content">
+        <%= yield %>
+    </div>
+</div>
+<div id="footer">
+    This is a test project by Benjamin Huang
+</div>
 </body>
 </html>
