@@ -1,0 +1,44 @@
+body
+{
+    font-family: Verdana;
+    background: url(../images/bg.jpg) 0 0 repeat-x #fff;
+    font-size: 12px;
+}
+
+h1
+{
+    font-size: 30px;
+    color: #6a4c31;
+    font-weight: normal;
+}
+
+h1
+{
+    font-size: 25px;
+    color: #6a4c31;
+    font-weight: normal;
+}
+
+a
+{
+    color: #8FFF9D;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    text-decoration: underline; /*text-transform: uppercase;*/
+}
+/*Footer style*/
+#header
+{
+    overflow: hidden;
+    text-align: center;
+    border-bottom: #d2d9d8 2px solid;
+}
+/*Footer style*/
+#footer
+{
+    overflow: hidden;
+    text-align: center;
+    border-top: #d2d9d8 2px solid;
+}
