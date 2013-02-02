@@ -41,3 +41,68 @@ a
     text-align: center;
     border-top: #d2d9d8 2px solid;
 }
+
+div .editor-label
+{
+    clear: left;
+    display: block;
+    float: left;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
+div .editor-field
+{
+    display: inline;
+    float: left;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=password], textarea, select
+{
+    border: 1px solid #D2D9D8;
+}
+
+textarea
+{
+    resize: none;
+}
+
+.formbuttons
+{
+    clear: left;
+    text-align: enter;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+/* Styles for validation helpers */
+/*{*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000 !important;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+/* Styles for validation helpers */
+/*}*/
