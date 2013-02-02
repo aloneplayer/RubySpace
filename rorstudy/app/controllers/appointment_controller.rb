@@ -5,13 +5,14 @@ class AppointmentController < ApplicationController
   end
   
   def show
-    render :text => "Show"
+    @title="Appointment datail"
+    @appointment = Appointment.find(params[:id])
   end
   
   def delete
     render :text => "Delete"
-    @appoiontment = Appointment.find(params[:id])
-    @appoiontment.destroy
+    @appointment = Appointment.find(params[:id])
+    @appointment.destroy
 
     redirect_to action: :index
   end
@@ -25,7 +26,7 @@ class AppointmentController < ApplicationController
     #render :text => "Create"
     @appointment= Appointment.new(params[:appointment])
     if @appointment.save
-      render 'success'
+      render 'success' 
     else
       render 'new'
     end

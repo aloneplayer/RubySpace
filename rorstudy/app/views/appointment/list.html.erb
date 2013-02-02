@@ -21,7 +21,7 @@
         <td><%= appointment.email %></td>
         <td><%= appointment.phone%></td>
         <td><%= appointment.date %></td>
-        <td> <a href="/appointment/show">Detail</a></td>
+        <td><%= link_to 'Detail', action: :show, id: appointment.id %></td>
         <td> <a href="/appointment/delete">Delete</a></td>
       </tr>
     <% end %>

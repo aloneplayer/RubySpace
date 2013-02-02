@@ -1,3 +1,5 @@
 <% @title="Appointment created" %>
 <h2><%=@title%></h2>
 <span>Thanks <%= @appointment.name%>, your appointment was created successfully.<span>
+<br/>
+<%= link_to 'Back', :controller=>"home", :action => "index" %>
