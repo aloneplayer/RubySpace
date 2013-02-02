@@ -12,6 +12,7 @@
         <th>Appointment Date</th>
         <th></th>
         <th></th>
+        <th></th>
       </tr>
      
     <% @appointments.each do |appointment| %>
@@ -22,6 +23,7 @@
         <td><%= appointment.phone%></td>
         <td><%= appointment.date %></td>
         <td><%= link_to 'Detail', action: :show, id: appointment.id %></td>
+        <td><%= link_to 'Edit', action: :edit, id: appointment.id %></td>
         <td><%= link_to 'Destroy', { action: :delete, id: appointment.id },
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
