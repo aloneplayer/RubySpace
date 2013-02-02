@@ -7,14 +7,18 @@ class AppointmentController < ApplicationController
   def show
     @title="Appointment datail"
     @appointment = Appointment.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+        flash[:notice] = "Wrong id"
+        redirect_to :action => 'notfound'
   end
   
   def delete
-    render :text => "Delete"
     @appointment = Appointment.find(params[:id])
     @appointment.destroy
-
-    redirect_to action: :index
+    redirect_to :action => "list"
+    rescue ActiveRecord::RecordNotFound
+        flash[:notice] = "Wrong id"
+        redirect_to :action => 'notfound'
   end
   
   def new
