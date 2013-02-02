@@ -87,6 +87,22 @@ textarea
     padding-left: 160px;
 }
 
+/*Table styles*/
+table
+{
+    border-collapse:collapse;
+}
+table,th, td
+{
+    border: 1px solid black;
+    padding : 2px 4px;
+}
+
+th
+{
+    background-color:#D2D9D8;
+}
+
 td.tcell_label
 {
     font-size: 11px;

@@ -1,0 +1,14 @@
+<h2>
+  <%= @title %>
+</h2>
+ 
+<table>
+<tr><td class="tcell_label">Name</td><td class="tcell_text"><%= @appointment.name %></td></tr>
+<tr><td class="tcell_label">Address</td><td class="tcell_text"><%= @appointment.address %></td></tr>
+<tr><td class="tcell_label">Phone</td><td class="tcell_text"><%= @appointment.phone %></td></tr>
+<tr><td class="tcell_label">Email</td><td class="tcell_text"><%= @appointment.email %></td></tr>
+<tr><td class="tcell_label">Appointment Date</td><td class="tcell_text"><%= @appointment.date %></td></tr>
+</table>
+ 
+<br/>
+<%= link_to 'Back to list', :controller=>"appointment", :action => "list" %>
