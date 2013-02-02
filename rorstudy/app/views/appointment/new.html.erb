@@ -1,0 +1,39 @@
+<% @title="Create new appointment" %> <h2><%= @title%></h2>
+<%= form_for @appointment, :url => { :action => "create" }, :html => {:class => "app_form"} do |f| %>
+<div class="editor-label">
+    <%= f.label :name %>
+</div>
+<div class="editor-field">
+	<%= f.text_field :name %>
+</div>
+<div class="editor-label">
+    <%= f.label :address %>
+</div>
+<div class="editor-field">
+    <%= f.text_field :address %>
+</div>
+<div class="editor-label">
+    <%= f.label :phone %>
+</div>
+<div class="editor-field">
+    <%= f.text_field :phone %>
+</div>
+<div class="editor-label">
+    <%= f.label :email %>
+</div>
+<div class="editor-field">
+    <%= f.text_field :email %>
+</div>
+<div class="editor-label">
+    <%= f.label :date %>
+</div>
+<div class="editor-field">
+    <%= f.text_field :date %>
+</div>
+<div class="formbuttons">
+    <%= submit_tag("submit") %>
+</div>
+<% end %>
+
+<br/>
+<%= link_to 'Back', :controller=>"home", :action => "index" %>

@@ -58,6 +58,16 @@ div .editor-field
     margin-bottom: 10px;
 }
 
+.editor-label
+{
+    width:90px;    
+}
+
+input[type=text], textarea
+{
+    width: 250px;
+}
+
 input[type=text], input[type=password], textarea, select
 {
     border: 1px solid #D2D9D8;
