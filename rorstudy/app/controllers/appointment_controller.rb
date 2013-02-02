@@ -23,12 +23,11 @@ class AppointmentController < ApplicationController
   
   def create
     #render :text => "Create"
-    #@appointment= Appointment.new(params[:post].permit(:name, :address, :email, :phone))
-
-    #if @post.save
-    #  redirect_to action: :show, id: @post.id
-    #else
-    #  render 'new'
-    #end
+    @appointment= Appointment.new(params[:appointment])
+    if @appointment.save
+      render 'success'
+    else
+      render 'new'
+    end
   end
-end
+ end
