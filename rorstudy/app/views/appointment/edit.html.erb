@@ -1,5 +1,5 @@
 <% @title="Create new appointment" %> <h2><%= @title%></h2>
-<%= form_for @appointment, :url => {:action => 'update', :id => @appointment } do |f| %>
+<%= form_for @appointment, :html =>{:id => "form_Update"}, :url => {:action => 'update', :id => @appointment } do |f| %>
     <%= render :partial => 'form', :locals => { :f => f } %>
     <div class="formbuttons">
     <%= f.submit "Update" %>
@@ -7,3 +7,6 @@
 <% end %>
 <br/>
 <%= link_to 'Back', :controller=>"home", :action => "index" %>
+<% content_for :js do %> 
+  <%= javascript_include_tag 'update' %> 
+<% end %> 

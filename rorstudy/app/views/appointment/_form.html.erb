@@ -1,3 +1,9 @@
+<% content_for :js do %> 
+  <%= javascript_include_tag 'jquery-1.8.3.min' %> 
+  <%= javascript_include_tag 'jquery.validate' %> 
+  <%= javascript_include_tag 'jquery-ui-1.9.2.custom.min' %> 
+  <%= javascript_include_tag 'formvalidation' %> 
+<% end %> 
 <div class="editor-label">
     <%= f.label :name %>
 </div>
