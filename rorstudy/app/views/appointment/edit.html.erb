@@ -1,4 +1,4 @@
-<% @title="Create new appointment" %> <h2><%= @title%></h2>
+<% @title="Update appointment" %> <h2><%= @title%></h2>
 <%= form_for @appointment, :html =>{:id => "form_Update"}, :url => {:action => 'update', :id => @appointment } do |f| %>
     <%= render :partial => 'form', :locals => { :f => f } %>
     <div class="formbuttons">

@@ -27,6 +27,7 @@ jQuery.validator.addMethod("phoneUS", function(value, element) {
 function InitUI()
 {
     $('#appointment_date').datetimepicker({
-        timeFormat: "hh:mm tt"
+        //timeFormat: "hh:mm tt",
+        dateFormat: "yy-mm-dd",
     });
 }
