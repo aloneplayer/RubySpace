@@ -21,3 +21,7 @@ jQuery.validator.addMethod("phoneUS", function(value, element) {
     return value.match(/^[2-9]\d{2}-\d{3}-\d{4}$/);
 }, "Please specify a valid phone number(211-111-1111)");
  
+function InitUI()
+{
+    $("#appointment_date").datepicker();
+}

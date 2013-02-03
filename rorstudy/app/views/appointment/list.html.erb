@@ -1,4 +1,4 @@
-<% @title="Appointment management" %>
+<% @title="Appointment management" %>  
 <h2><%=@title%></h2>
 <%if @appointments.count <=0 %>
     <span>There is no appointment currently.<span>
@@ -24,7 +24,7 @@
         <td><%= appointment.date %></td>
         <td><%= link_to 'Detail', action: :show, id: appointment.id %></td>
         <td><%= link_to 'Edit', action: :edit, id: appointment.id %></td>
-        <td><%= link_to 'Destroy', { action: :delete, id: appointment.id },
+        <td><%= link_to 'Delete', { action: :delete, id: appointment.id },
                     method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
