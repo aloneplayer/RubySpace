@@ -5,6 +5,7 @@
     <link href="/css/layout.css" rel="stylesheet" type="text/css" />
     <link href="/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/themes/base/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <%= yield :css %> 
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
 </head>
@@ -22,6 +23,5 @@
 <div id="footer">
     This is a test project by Benjamin Huang
 </div>
- <%= yield :js %>  
 </body>
 </html>
