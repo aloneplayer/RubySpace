@@ -14,7 +14,7 @@ function AddValidationRules(formId) {
                 phoneUS: true
             },
             "appointment[date]": {
-                date: true
+                required: true
             }
         }
     });
